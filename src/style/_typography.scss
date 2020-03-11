@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+$base-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.small-400,
+.small-500,
+.medium-400,
+.medium-500,
+.labelStyle,
+.popup,
+.bold,
+ul li,
+a {
+    font-family: $base-font-family;
+}
+
+h1#title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.h5 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.medium-400,
+.medium-500 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.small-400,
+.small-500 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.medium-400,
+.small-400 {
+    font-weight: 400;
+}
+
+.medium-500,
+.small-500 {
+    font-weight: 700;
+}
+
+.medium-500
+.small-500 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}

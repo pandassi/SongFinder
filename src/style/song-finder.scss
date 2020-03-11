@@ -1,0 +1,128 @@
+@import '../style/colors';
+@import '../style/layout';
+@import '../style/typography';
+
+body {
+  background-color: $body-background;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.file-input-container {
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 ($margin-step / 2);
+    margin-top: 5px;
+    display: inline-flex;
+
+    .ui.button {
+        cursor: pointer;
+        margin-right: $margin-step / 2;
+        padding: ($margin-step / 4) ($margin-step / 2);
+        border-radius: 2px;
+        color: white;
+        background-color: $color-action;
+        @extend .small-500;
+        width: auto;
+    }
+
+    .placeholder {
+        @extend .small-400;
+        color: $color-primary;
+        display: inline-block;
+        text-overflow: ellipsis;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        vertical-align: middle;
+        max-width: 400px;
+    }
+}
+
+.hidden {
+  display: none;
+}
+
+.file-name {
+    font-size: 16px; 
+    font-weight: 700;
+}
+  
+.section-upload + .section-upload {
+  display: -webkit-box;
+  margin-top: $margin-step * 2;
+}
+  
+  .form-column {
+    > .champ + .champ {
+      margin-top: $margin-step * 2;
+    }
+  }
+  
+  ul h3, h3 {
+    @extend .h3;
+  }
+
+ul .section-title h3 {
+    @extend .h3;
+    color: $color-primary;
+    margin-bottom: $margin-step * 2;
+  
+    &.with-description {
+      margin-bottom: $margin-step;
+    }
+  }
+  
+  .ui.checkbox.release-date {
+    margin-bottom: $margin-step / 2;
+  }
+  
+  .section {
+    background-color: $row-background;
+    border-radius: 5px;
+    min-height: 400px;
+    margin: 15px;
+}
+
+  .section-divider {
+    margin: ($margin-step * 4) 0;
+    height: 1px;
+    width: 100%;
+    background-color: $color-stroke;
+  }
+  
+  .description {
+    margin-top: $margin-step;
+  
+    @extend .medium-400;
+    color: $color-secondary;
+  
+    a {
+      @extend .medium-500;
+      color: $color-action;
+    }
+  }
+  
+  .space {
+    margin-bottom: 100px;
+  }
+  
+  .search input {
+    width: auto !important;
+    margin: 0px 0 0px 0 !important;
+  }
+
+  .question.circle.outline.icon.custom {
+    color: #687A8B;
+    font-size: 10pt;
+  }
+
+  .audio {
+    margin-top: 20px;
+  }
+
+  
